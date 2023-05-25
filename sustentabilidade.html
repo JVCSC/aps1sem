@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APS</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="cabecalho">
+				<nav>
+					<ul>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sustentabilidade.html">Desafios</a></li>
+							<li><a href="implementacao.html">Implementações</a></li>
+						</ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="imgs/unip-logo.png" class="img">
+				</a>
+			</div>
+		</header>
+		<main>
+			<div class="secao1">
+				<h2>Sustentabilidade</h2>
+				<p>Sustentabilidade na Tecnologia da Informação (TI) refere-se à prática de reduzir o impacto ambiental causado pela produção, uso e descarte de tecnologias de informação e comunicação. A TI é um dos setores que mais contribui para o impacto ambiental, uma vez que utiliza recursos energéticos e materiais em larga escala.</p>
+				<div class="topic" onclick="toggleDescription(1)">Sustentabilidade na prática</div>
+				<div class="description" id="description1">
+					<p>Uso de energias renováveis, virtualização, redução do consumo de energia, reciclagem, utilização de materiais ecológicos, educação e conscientização</p>
+					<img src="imgs/mundo conectado.jpg" alt="mundo" class="descricao1">
+				</div>
+				<div class="topic" onclick="toggleDescription(2)">Benefícios de práticas sustentáveis</div>
+				<div class="description" id="description2">
+					<p>A utilização de práticas sustentáveis são responsáveis por diminuição na emissão de CO2 e utilização de materiais biodegradáveis</p>
+					<img src="imgs/sust.jpeg" alt="mundo" class="descricao2">
+				</div>
+			</div>
+			
+			<div class="secao2">
+				<h2>Desafios em implementar práticas sustentáveis</h2>
+				<p>A instalação de fiação de fibra ótica subterrânea é, inegavelmente, benéfica para o meio-ambiente. Todavia, para a instalação se torna necessário um alto investimento e, principalmente, um projeto bem estruturado para tornar viável a instalação em larga escala.</p>
+				<div class="topic" onclick="toggleDescription(3)">Desafios</div>
+				<div class="description" id="description3">
+					<p>Para instalar se demanda um projeto bem estruturado, principalmente no que tange a coordenação entre a iniciativa pública e privada. Se torna necessária, também, a cautela para manter serviços subterrâneos pré-existentes, como água/esgoto/esgoto.</p>
+					<img src="imgs/tipos_de_canais.jpg" alt="fibra" class="descricao1">
+				</div>
+			</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script>
+			function toggleDescription(topicId) {
+				const description = document.getElementById(`description${topicId}`);
+				description.classList.toggle('active');
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+html {
+	height: 150%;
+	background-image: linear-gradient(to bottom, #b1b0b0, #f5f4f4);
+	background-repeat: no-repeat;
+  }
+
+
+.img {
+	position: absolute;
+	max-width: 15%;
+	margin: 20px;
+}
+
+#cidade {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	margin-top: 10px;
+}
+
+.descricao1 {
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	margin: 5px;
+	max-width: 50%;
+}
+
+#cabecalho {
+	padding: 20px 0;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+  }
+
+nav {
+	position: absolute;
+	top: 50px;
+	right: 20px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+}
+
+nav a:hover {
+	color: #d1d1d1;
+	text-decoration: underline;
+}
+
+footer.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+ }
+
+
+.secao1, .secao2 {
+	position: relative;
+	top: 130px;
+	text-align: justify;
+	padding: 10px;
+	margin: 5px;
+}
+
+.secao1 p,
+.secao2 p,
+.description {
+  line-height: 1.5;
+  color: #3b3b3b;
+}
+
+.secao1,
+.secao2 {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secao1 h2,
+.secao2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+h2 {
+	font-family: "Arial", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333333;
+  }
+  
+p {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	color: #666666;
+ }
+
+ .gridbox {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+
+.topic {
+	cursor: pointer;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.topic.active {
+	background-color: #cccaca;
+}
+
+.description {
+	display: none;
+	padding: 10px;
+}
+
+.description.active {
+	display: block;
+}
+
+.descricao1, .descricao2 {
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.secao1 p, 
+.secao2 p {
+	margin: 5px;
+}
+
+.topic {
+	font-weight: bold;
+}

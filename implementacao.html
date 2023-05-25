@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APS</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="cabecalho">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sustentabilidade.html">Desafios</a></li>
+						<li><a href="implementacao.html">Implementações</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="imgs/unip-logo.png" class="img">
+				</a>
+			</div>
+		</header>
+		<main>
+			<div class="secao1" id="gridSolo">
+				<h2>Benefícios da Instalação Subterrânea</h2>
+				<p>Depois que toda a fiação subterrânea for instalada, pode-se desfrutar de várias vantagens em relação à fiação aérea convencional. A fiação subterrânea é mais segura e confiável, pois é protegida contra intempéries, como ventos fortes, neve e chuva, que podem danificar ou derrubar fios aéreos. Além disso, a fiação subterrânea é esteticamente mais agradável, pois não há postes e fios visíveis, o que melhora a aparência das áreas urbanas.</p>
+				<div class="topic" onclick="toggleDescription(1)">Demais vantagens</div>
+				<div class="description" id="description1">
+					<p>A Outra vantagem da fiação subterrânea é que ela reduz o risco de interrupções no fornecimento de energia elétrica causadas por condições climáticas adversas ou por objetos estranhos que entram em contato com os fios. Como resultado, a fiação subterrânea geralmente oferece uma rede elétrica mais confiável e menos suscetível a interrupções.</p>
+					<img src="imgs/cidade.jpg" alt="mundo" class="descricao1">
+				</div>
+			</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script>
+			function toggleDescription(topicId) {
+				const description = document.getElementById(`description${topicId}`);
+				description.classList.toggle('active');
+			}
+		</script>
+	</body>
+</html>

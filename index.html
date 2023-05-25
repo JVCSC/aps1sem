@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APS</title>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<header class="header">
+			<div class="cabecalho">
+				<nav>
+					<ul>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sustentabilidade.html">Desafios</a></li>
+							<li><a href="implementacao.html">Implementações</a></li>
+						</ul>
+					</ul>
+				</nav>
+			</div>
+			<div class="logo">
+				<a href="index.html">
+					<img src="imgs/unip-logo.png" class="img">
+				</a>
+			</div>
+		</header>
+		<main>
+			<div class="secao1">
+				<h2>Tecnologia da Informação</h2>
+				<p>Tecnologia da Informação (TI) é um termo utilizado para descrever o conjunto de ferramentas, recursos e processos utilizados para armazenar, processar e transmitir informações de forma eletrônica.</p>
+				<div class="topic" onclick="toggleDescription(1)">Aplicabilidade</div>
+				<div class="description" id="description1">
+					<p>A Tecnologia da Informação e suas aplicações se tornaram imperativas para o dia-a-dia da sociedade. Uma de seus maiores impactos foi, sem dúvidas, na comunicação, reduzindo as distâncias e facilitando processos que outrora demandavam mais tempo e esforço</p>
+					<img src="imgs/mundo conectado.jpg" alt="mundo" class="descricao1">
+				</div>
+				<div class="topic" onclick="toggleDescription(2)">Tecnologia da Comunicação </div>
+				<div class="description" id="description2">
+					<p>Tecnologia da comunicação é um conjunto de ferramentas, processos e recursos utilizados para transmitir informações entre pessoas, dispositivos ou sistemas. Essas ferramentas podem incluir dispositivos eletrônicos, redes de comunicação, software, entre outros. A tecnologia da comunicação é o conjunto de ferramentas, processos e recursos utilizados para transmitir informações entre pessoas, dispositivos ou sistemas, sendo fundamental para o funcionamento de muitas empresas e para a sociedade em geral.</p>
+				</div>
+			</div>
+			
+			<div class="secao2">
+				<h2>Tecnologia da Informação e Comunicação (TIC)</h2>
+				<p>A junção entre Tecnologia da Informação e Comunicação resulta em Tecnologia da Informação e comunicação, que, em suma, é a priorização de infraestruturas de comunicação avançadas, visando uma melhora constante em relação à entrega dos serviços de comunicação, propiciando uma interconectividade melhor.</p>
+				<div class="topic" onclick="toggleDescription(3)">Fibra Ótica</div>
+				<div class="description" id="description3">
+					<p>Dentro das tecnologias eficientes para a construção de uma infraestrutura de comunicação avançada, a principal é a fibra ótica. A fibra ótica é uma tecnologia de transmissão de dados por meio de fibras de vidro ou plástico. Ela oferece alta velocidade e capacidade de transmissão, além de ser mais resistente a interferências eletromagnéticas do que as tecnologias de cabo coaxial ou par trançado.</p>
+					<img src="imgs/fibraoticaoceano.jpeg" alt="fibra" class="descricao1">
+				</div>
+			</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+		<script>
+			function toggleDescription(topicId) {
+				const description = document.getElementById(`description${topicId}`);
+				description.classList.toggle('active');
+			}
+		</script>
+	</body>
+</html>
